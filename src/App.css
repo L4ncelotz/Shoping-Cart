@@ -1,3 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.875rem; /* ปรับขนาดฟอนต์ */
+  color: rgba(0, 0, 0, 0.7); /* ทำให้สีจางลง */
+}
+
+  
+
 .App {
   text-align: center;
 }
