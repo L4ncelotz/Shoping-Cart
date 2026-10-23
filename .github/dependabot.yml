@@ -1,0 +1,19 @@
+
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+    # Disable ordinary version update PRs
+    open-pull-requests-limit: 0
+
+    # Group security patches only
+    groups:
+      security-patches:
+        applies-to: security-updates
+        patterns:
+          - "*"
+        update-types:
+          - "patch"
